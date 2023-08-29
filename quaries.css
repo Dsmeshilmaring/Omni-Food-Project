@@ -1,0 +1,327 @@
+/**
+ * 1em = 1rem = 16px
+ *
+ * @format
+ */
+
+/* 84 x 16 =  1376px */
+
+/* ====================================== */
+/* BELLOW 1376px (Small desktop)*/
+/* ====================================== */
+@media (max-width: 84em) {
+  html {
+    font-size: 62.5%;
+  }
+
+  .hero {
+    max-width: 120rem;
+  }
+
+  .hero-heading {
+    font-size: 4.4rem;
+  }
+
+  .header-nav-list {
+    gap: 3.2rem;
+  }
+}
+
+/* ====================================== */
+/* BELLOW 1200px (Small desktop)*/
+/* ====================================== */
+@media (max-width: 75em) {
+  html {
+    /* 9px/16px =  */
+    font-size: 56.25%;
+  }
+
+  .grid {
+    row-gap: 8rem;
+    column-gap: 4.8rem;
+  }
+
+  .heading-secondary {
+    font-size: 3.2rem;
+  }
+
+  .testimonal-container {
+    padding: 6.4rem;
+  }
+
+  .grid:not(:last-child) {
+    margin: 3.2rem;
+  }
+}
+
+/* ====================================== */
+/* Mobile Navigation (Tablet Screen)*/
+/* ====================================== */
+@media (max-width: 60em) {
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 0 8rem;
+  }
+
+  .hero-text-box,
+  .hero-img-box {
+    text-align: center;
+  }
+
+  .delivered-meals {
+    justify-content: center;
+  }
+
+  .delivered-meals {
+    margin-top: 3.2rem;
+  }
+
+  .hero-img-box img {
+    width: 60%;
+  }
+
+  .logos-box img {
+    height: 2.4rem;
+  }
+
+  .step-number {
+    font-size: 7.4rem;
+  }
+
+  .meal-text-cointainer {
+    padding: 2.4rem 3.2rem 3.2rem;
+  }
+
+  .list-attributes {
+    gap: 0.2rem;
+  }
+
+  .testimonals-section {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-container {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .testimonals {
+    margin-bottom: 3.2rem;
+  }
+
+  .pricing-section {
+    padding: 9.8rem 0 0 0;
+  }
+
+  .cta-container {
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .section-cta container {
+    padding: 0 3.2rem;
+  }
+
+  .cta-heading .heading-secondary {
+    margin-bottom: 3.2rem;
+  }
+
+  .form {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  .form div:last-child {
+    margin-top: 1.2rem;
+  }
+
+  .btn--1:link,
+  .btn--1:visited,
+  .btn--1:hover,
+  .btn--1:active,
+  .btn--2:link,
+  .btn--2:visited {
+    padding: 1.6rem 1.2rem;
+  }
+
+  .btn--2:hover,
+  .btn--2:active
+
+  /* ============ Mobile navigation =================*/
+  html {
+    font-size: 62.5%;
+  }
+
+  .btn-mobile {
+    display: block;
+  }
+
+  .header-nav-list {
+    flex-direction: column;
+  }
+
+  .header-nav-item {
+    font-size: 3.2rem;
+  }
+
+  .header-nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    /* display: none; is not woking on animation  */
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+
+    background-color: rgba(255, 255, 255, 0.95);
+
+    transition: all 0.5s ease-in;
+  }
+
+  .close {
+    display: none;
+  }
+
+  .nav-open .open {
+    display: none;
+  }
+
+  .nav-open .close {
+    display: block;
+    position: relative;
+  }
+
+  .nav-open .header-nav {
+    display: flex;
+    transform: translateX(0);
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+  }
+}
+
+/* ====================================== */
+/* Below 752px (Mini Tablet Screen)*/
+/* ====================================== */
+
+@media (max-width: 47em) {
+  .grid--cols-3,
+  .grid--cols-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .diets {
+    grid-row: 2/3;
+    grid-column: 1/3;
+    justify-self: center;
+  }
+
+  .pricing-plan-container {
+    width: 100%;
+  }
+
+  .footer--grid {
+    grid-template-columns: repeat(6, 1fr);
+    row-gap: 6.4rem;
+    justify-items: center;
+  }
+
+  .footer-nav {
+    grid-row: 1/2;
+    grid-column: span 2;
+  }
+
+  .contact-us,
+  .socail-media {
+    grid-row: 2/3;
+    grid-column: span 3;
+  }
+}
+
+/* ====================================== */
+/* Below 544px (Mobile Screen)*/
+/* ====================================== */
+@media (max-width: 34em) {
+  .hero {
+    padding: 0 2.4rem;
+  }
+
+  .hero-section {
+    padding: 2.4rem 0;
+  }
+
+  .delivered-meals {
+    flex-direction: column;
+  }
+
+  .hero-img-box img {
+    width: 80%;
+  }
+
+  .logos-box img {
+    height: 1.2rem;
+  }
+
+  .logos-box {
+    gap: 2.4rem;
+  }
+
+  .feature-section {
+    padding: 6.4rem;
+  }
+
+  .grid--cols-2,
+  .grid--cols-3,
+  .grid--cols-4 {
+    grid-template-columns: 1fr;
+  }
+
+  .step-img-box:nth-child(2) {
+    grid-row: 1;
+  }
+
+  .step-img-box:nth-child(6) {
+    grid-row: 5;
+  }
+
+  .step-img-box {
+    transform: translateY(3.2rem);
+  }
+
+  .diets {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    justify-self: center;
+  }
+
+  .testimonals {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .cta-container {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-image-box {
+    height: 42rem;
+    grid-row: 1;
+  }
+
+  .cta-signup-box {
+    padding: 2.4rem;
+  }
+
+  .footer {
+    padding: 4.8rem 0;
+  }
+}
